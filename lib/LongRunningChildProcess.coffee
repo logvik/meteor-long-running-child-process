@@ -160,7 +160,7 @@ class sanjo.LongRunningChildProcess
     }
     command = path.basename options.command
     spawnScript = @_getSpawnScriptPath()
-    commandArgs = [spawnScript, @_getMeteorPid(), @taskName, options.command].concat(options.args)
+    commandArgs = [spawnScript, @_getMeteorPid(), @_getPidFilePath(), @taskName, options.command].concat(options.args)
     fs.chmodSync(spawnScript, 0o544)
 
     log.debug("LongRunningChildProcess.spawn is spawning '#{command}'")

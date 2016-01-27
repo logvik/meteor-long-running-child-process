@@ -1,7 +1,7 @@
 Package.describe({
   name: 'sanjo:long-running-child-process',
   summary: 'Spawn child processes that survive restarts and exit when the app exits.',
-  version: '1.1.3',
+  version: '1.1.4',
   git: 'https://github.com/Sanjo/meteor-long-running-child-process.git'
 });
 
@@ -25,5 +25,5 @@ Package.onUse(function(api) {
     'main.js'
   ], 'server')
 
-  api.addFiles(['lib/spawnScript.js'], 'server', {isAsset: true})
+  api.addAssets(['lib/spawnScript.js'], 'server')
 });
