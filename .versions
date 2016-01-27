@@ -12,5 +12,5 @@ practicalmeteor:chai@1.9.2_3
 practicalmeteor:loglevel@1.1.0_3
 promise@0.5.1
 random@1.0.5
-sanjo:long-running-child-process@1.1.4
+sanjo:long-running-child-process@1.1.5
 underscore@1.0.4
